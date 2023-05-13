@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://ld-wp.template-help.com/wordpress_prod-22160/v1/wp-content/uploads/2019/02/cropped-favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./assets/CSS/base.css" />
+    <link rel="stylesheet" href="./assets/CSS/Gallery.css" />
+    <link rel="stylesheet" href="./assets/CSS/gallery-responsive.css" />
+    <title>Gallery</title>
+  </head>
+  <body>
+    <!---------NAVBAR---------->
+    <section class="header-container">
+      <div class="header-container-flex-desktop">
+        <div class="Logo-desktop">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+        <div class="menubar-pc">
+          <a href="./index.html"><span>Home</span></a>
+          <a href="./Menu.html"><span>Menu</span></a>
+          <a href="./Gallery.html"><span>Gallery</span></a>
+          <a href="./Booking.html"><span>Booking</span></a>
+          <a href="./About.html"><span>About</span></a>
+          <a href="./Contact.html"><span>Contact</span></a>
+        </div>
+        <div class="mobile-btn" onclick="showMenu()">
+          <i id="btn-open" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="nav-overlay" id="nav-overlay" onclick="hideMenu()"></div>
+      </div>
+      <nav class="menubar-mobile" id="nav-mobile-btn">
+        <div class="btn-close" onclick="hideMenu()">
+          <i class="fa fa-times"></i>
+        </div>
+        <a href="./index.html">Home</a>
+        <a href="./Menu.html">Menu</a>
+        <a href="./Gallery.html">Gallery</a>
+        <a href="./Booking.html">Booking</a>
+        <a href="./About.html">About</a>
+        <a href="./Contact.html">Contact</a>
+      </nav>
+    </section>
+    <!---------GALLERY---------->
+    <div class="gallery-container">
+      <div class="title">Our Gallery</div>
+      <div class="gallery-filter">
+        <div class="filter">
+          <!-- <button class="btn" data-filter="all" style="display:none">
+            all
+          </button> -->
+          <button class="btn active" data-filter="all">All</button>
+          <button class="btn" data-filter="view">View</button>
+          <button class="btn" data-filter="diningR">Dining room</button>
+          <button class="btn" data-filter="spring">Spring</button>
+          <button class="btn" data-filter="summer">Summer</button>
+          <button class="btn" data-filter="autumn">Autumn</button>
+          <button class="btn" data-filter="winter">winter</button>
+        </div>
+        <div class="filter-items">
+          <!-- View -->
+          <div class="item all view">
+            <img src="./images/gallery-img/view1.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all view">
+            <img src="./images/gallery-img/view2.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all view">
+            <img src="./images/gallery-img/view3.jpg" alt="" id="modal-img" />
+          </div>
+          <!-- Dining Room -->
+          <div class="item all diningR">
+            <img src="./images/gallery-img/1.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all diningR">
+            <img src="./images/gallery-img/2.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all diningR">
+            <img src="./images/gallery-img/3.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all diningR">
+            <img src="./images/gallery-img/4.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all diningR">
+            <img src="./images/gallery-img/5.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all diningR">
+            <img src="./images/gallery-img/6.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all diningR">
+            <img src="./images/gallery-img/8.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all diningR">
+            <img src="./images/gallery-img/9.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all diningR">
+            <img src="./images/gallery-img/10.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all diningR">
+            <img src="./images/gallery-img/11.jpg" alt="" id="modal-img" />
+          </div>
+          <!-- Spring -->
+          <div class="item all spring">
+            <img src="./images/gallery-img/spring1.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all spring">
+            <img
+              src="./images/gallery-img/spring2.webp"
+              alt=""
+              id="modal-img"
+            />
+          </div>
+          <div class="item all spring">
+            <img src="./images/gallery-img/spring3.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all spring">
+            <img src="./images/gallery-img/spring5.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all spring">
+            <img src="./images/gallery-img/spring4.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all spring">
+            <img
+              src="./images/gallery-img/spring6.jpeg"
+              alt=""
+              id="modal-img"
+            />
+          </div>
+          <div class="item all spring">
+            <img
+              src="./images/gallery-img/spring7.webp"
+              alt=""
+              id="modal-img"
+            />
+          </div>
+          <!-- Summer -->
+          <div class="item all summer">
+            <img src="./images/gallery-img/summer1.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all summer">
+            <img src="./images/gallery-img/summer2.png" alt="" id="modal-img" />
+          </div>
+          <div class="item all summer">
+            <img src="./images/gallery-img/summer3.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all summer">
+            <img src="./images/gallery-img/summer4.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all summer">
+            <img src="./images/gallery-img/summer5.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all summer">
+            <img
+              src="./images/gallery-img/summer6.webp"
+              alt=""
+              id="modal-img"
+            />
+          </div>
+          <div class="item all summer">
+            <img src="./images/gallery-img/summer7.jpg" alt="" id="modal-img" />
+          </div>
+          <!-- Autumn -->
+          <div class="item all autumn">
+            <img src="./images/gallery-img/autumn1.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all autumn">
+            <img src="./images/gallery-img/autumn2.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all autumn">
+            <img src="./images/gallery-img/autumn3.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all autumn">
+            <img src="./images/gallery-img/autumn4.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all autumn">
+            <img src="./images/gallery-img/autumn5.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all autumn">
+            <img
+              src="./images/gallery-img/autumn6.webp"
+              alt=""
+              id="modal-img"
+            />
+          </div>
+          <!-- Winter -->
+          <div class="item all winter">
+            <img src="./images/gallery-img/winter1.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all winter">
+            <img
+              src="./images/gallery-img/winter2.webp"
+              alt=""
+              id="modal-img"
+            />
+          </div>
+          <div class="item all winter">
+            <img src="./images/gallery-img/winter3.jpg" alt="" id="modal-img" />
+          </div>
+          <div class="item all winter">
+            <img
+              src="./images/gallery-img/winter4.jpeg"
+              alt=""
+              id="modal-img"
+            />
+          </div>
+          <div class="item all winter">
+            <img
+              src="./images/gallery-img/winter5.jpeg"
+              alt=""
+              id="modal-img"
+            />
+          </div>
+          <div class="item all winter">
+            <img src="./images/gallery-img/winter6.jpg" alt="" id="modal-img" />
+          </div>
+        </div>
+        <div class="gallery-content">
+          <h2 class="title">Welcome To Come&Eat</h2>
+          <p>
+            Chúng tôi chào đón bạn đến với một bữa tiệc ngon với các món ăn tinh
+            tế ở Crunchos. Với một loạt các món ăn thế giới để lựa chọn, chúng
+            tôi đảm bảo cho bạn một trải nghiệm bữa tiệc xa hoa tại nhà hàng của
+            chúng tôi! Tại đây bạn sẽ hòa mình vào một bầu không khí thân thiện
+            và lãng mạn và thưởng thức các món ăn cao cấp của chúng tôi. Với sự
+            lựa chọn tuyệt vời của chúng tôi về các món ăn từ khắp nơi trên thế
+            giới, bạn có thể cảm thấy mình là một du khách và một người sành ăn
+            thực sự!
+          </p>
+        </div>
+        <div class="banner-container">
+          <!-- <div class="back-img">
+          <img src="./images/gallery-img/welcome.png" alt="" />
+        </div> -->
+
+          <div class="banner-content">
+            We are proud <br />
+            to serving for you
+          </div>
+          <div class="banner-year">
+            <img src="./images/gallery-img/12y.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!---------FOOTER---------->
+    <section class="footer-container">
+      <div class="footer-content">
+        <div class="footer-item">
+          <div class="footer-title">Address</div>
+          <div class="footer-item-content">
+            Quince Saigon <br />37bis Đ. Ký Con, Phường Nguyễn Thái Bình,
+            <br />Quận 1,Thành phố Hồ Chí Minh
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Follow us</div>
+          <div class="footer-item-content" id="icon-box">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://www.google.com" target="_blank"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://www.pinterest.com" target="_blank"
+              ><i class="fa fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Contact us</div>
+          <div class="footer-item-content">
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>Copyright © 2019. All Rights Reserved Theme design by Zemez</p>
+    </div>
+    <button class="auto-btn" id="auto-btn" onclick="autoScroll()">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </body>
+  <div id="loading">
+    <img id="loading-image" src="./images/ajax-loader.gif" alt="Loading..." />
+  </div>
+  <script src="./assets/JS/gallery.js"></script>
+  <script src="./assets/JS/base.js"></script>
+</html>

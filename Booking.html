@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css">  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://ld-wp.template-help.com/wordpress_prod-22160/v1/wp-content/uploads/2019/02/cropped-favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./assets/CSS/base.css" />
+    <link rel="stylesheet" href="./assets/CSS/booking.css" />
+    <link rel="stylesheet" href="./assets/CSS/booking-responsive.css" />
+    <title>Booking</title>
+  </head>
+  <body>
+    <!---------NAVBAR---------->
+    <section class="header-container">
+      <div class="header-container-flex-desktop">
+        <div class="Logo-desktop">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+        <div class="menubar-pc">
+          <a href="./index.html"><span>Home</span></a>
+          <a href="./Menu.html"><span>Menu</span></a>
+          <a href="./Gallery.html"><span>Gallery</span></a>
+          <a href="./Booking.html"><span>Booking</span></a>
+          <a href="./About.html"><span>About</span></a>
+          <a href="./Contact.html"><span>Contact</span></a>
+        </div>
+        <div class="mobile-btn" onclick="showMenu()">
+          <i id="btn-open" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="nav-overlay" id="nav-overlay" onclick="hideMenu()"></div>
+      </div>
+      <nav class="menubar-mobile" id="nav-mobile-btn">
+        <div class="btn-close" onclick="hideMenu()">
+          <i class="fa fa-times"></i>
+        </div>
+        <a href="./index.html">Home</a>
+        <a href="./Menu.html">Menu</a>
+        <a href="./Gallery.html">Gallery</a>
+        <a href="./Booking.html">Booking</a>
+        <a href="./About.html">About</a>
+        <a href="./Contact.html">Contact</a>
+      </nav>
+    </section>
+    <!---------BOOKING---------->
+    <div class="booking-container">
+      <form class="booking-content" name="booking">
+        <div class="title">Booking</div>
+        <div class="name">
+          <div class="alert-box">
+            <input type="text" placeholder="First Name*" id="first-n" />
+            <div class="required" id="1st-required">
+              Please fill out your first name
+            </div>
+          </div>
+          <div class="alert-box">
+            <input type="text" placeholder="Last Name*" id="second-n" />
+            <div class="required" id="2nd-required">
+              Please fill out your second name
+            </div>
+          </div>
+        </div>
+        <div class="booking-info">
+          <div class="alert-box">
+            <input type="email" placeholder="Email Address*" id="email" />
+            <div class="required" id="email-required">
+              Please fill out your email address
+            </div>
+            <div class="required" id="email-invalid">Invalid Email Address</div>
+          </div>
+          <div class="alert-box">
+            <input type="tel" id="phone" placeholder="Phone Number*" />
+            <div class="required" id="phone-required">
+              Please fill out your phone number
+            </div>
+            <div class="required" id="phone-invalid">Invalid Phone Number</div>
+          </div>
+        </div>
+        <div class="alert-box">
+          <input
+            type="number"
+            id="people"
+            placeholder="Guest Numbers"
+            min="1"
+            oninput="validity.valid||(value='');"
+          />
+          <div class="required" id="people-required">
+            Please set guests number
+          </div>
+        </div>
+        <div class="booking-time">
+          <div class="alert-box">
+            <input type="time" id="time" />
+            <div class="required" id="time-required">Please set time</div>
+          </div>
+          <div class="alert-box">
+            <input type="date" id="date" />
+            <div class="required" id="date-required">Please set a date</div>
+          </div>
+        </div>
+        <textarea placeholder="Notes" class="note" id="note"></textarea>
+        <div class="button-submit">
+          <button class="btn" id="submit-btn">Book a table</button>
+        </div>
+      </form>
+      <div class="img-booking-container">
+        <img src="./images/booking.png" alt="booking" class="img-booking" />
+      </div>
+    </div>
+    <!-- POPUP -->
+    <div class="popup" id="popup-booking">
+      <div class="popup-container">
+        <div class="popup-content">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="512"
+            height="512"
+            viewBox="0 0 64 64"
+          >
+            <radialGradient
+              id="c0yjGprCnv9Gl20e9Vf6Ca"
+              cx="32.5"
+              cy="31.5"
+              r="30.516"
+              gradientUnits="userSpaceOnUse"
+              spreadMethod="reflect"
+            >
+              <stop offset="0" stop-color="#afeeff"></stop>
+              <stop offset=".193" stop-color="#bbf1ff"></stop>
+              <stop offset=".703" stop-color="#d7f8ff"></stop>
+              <stop offset="1" stop-color="#e1faff"></stop>
+            </radialGradient>
+            <path
+              fill="url(#undefined)"
+              d="M59,20h1.5c2.168,0,3.892-1.998,3.422-4.243C63.58,14.122,62.056,13,60.385,13L53,13 c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2h3.385c1.67,0,3.195-1.122,3.537-2.757C60.392,3.998,58.668,2,56.5,2H34.006H32.5h-24 C6.575,2,5,3.575,5,5.5S6.575,9,8.5,9H10c1.105,0,2,0.895,2,2c0,1.105-0.895,2-2,2l-5.385,0c-1.67,0-3.195,1.122-3.537,2.757 C0.608,18.002,2.332,20,4.5,20H18v12L4.615,32c-1.67,0-3.195,1.122-3.537,2.757C0.608,37.002,2.332,39,4.5,39H5c1.105,0,2,0.895,2,2 c0,1.105-0.895,2-2,2H4.5c-2.168,0-3.892,1.998-3.422,4.243C1.42,48.878,2.945,50,4.615,50H10c1.105,0,2,0.895,2,2 c0,1.105-0.895,2-2,2l-1.385,0c-1.67,0-3.195,1.122-3.537,2.757C4.608,59.002,6.332,61,8.5,61h22.494H32.5h23 c1.925,0,3.5-1.575,3.5-3.5S57.425,54,55.5,54H55c-1.105,0-2-0.895-2-2c0-1.105,0.895-2,2-2h4.385c1.67,0,3.195-1.122,3.537-2.757 C63.392,44.998,61.668,43,59.5,43H47V31h12.385c1.67,0,3.195-1.122,3.537-2.757C63.392,25.998,61.668,24,59.5,24H59 c-1.105,0-2-0.895-2-2C57,20.895,57.895,20,59,20z"
+            ></path>
+            <linearGradient
+              id="c0yjGprCnv9Gl20e9Vf6Cb_118993_gr1"
+              x1="32"
+              x2="32"
+              y1="6"
+              y2="56"
+              gradientUnits="userSpaceOnUse"
+              spreadMethod="reflect"
+            >
+              <stop offset="0" stop-color="#42d778"></stop>
+              <stop offset=".996" stop-color="#34b171"></stop>
+              <stop offset="1" stop-color="#34b171"></stop>
+            </linearGradient>
+            <path
+              fill="url(#c0yjGprCnv9Gl20e9Vf6Cb_118993_gr1)"
+              d="M57,31c0,13.805-11.195,25-25,25S7,44.805,7,31S18.195,6,32,6S57,17.195,57,31z"
+            ></path>
+            <path
+              fill="#fff"
+              d="M42.695,21.733L27.5,36.946l-5.235-5.22c-0.977-0.974-2.558-0.973-3.533,0.003l0,0 c-0.977,0.977-0.976,2.562,0.002,3.538l7.002,6.985c0.977,0.975,2.559,0.973,3.534-0.003l16.962-16.982 c0.975-0.977,0.975-2.559-0.001-3.535l0,0C45.254,20.756,43.671,20.756,42.695,21.733z"
+            ></path>
+          </svg>
+          <div class="popup-title">Booking Successful</div>
+          <div id="popup-confirm-content">
+            <div class="info">
+              <div class="info-title">Customer Name:</div>
+              <div class="info-content" id="popup-name"></div>
+            </div>
+            <div class="info">
+              <div class="info-title">Phone Number:</div>
+              <div class="info-content" id="popup-phone"></div>
+            </div>
+            <div class="info">
+              <div class="info-title">Email Address:</div>
+              <div class="info-content" id="popup-email"></div>
+            </div>
+            <div class="info">
+              <div class="info-title">Date:</div>
+              <div class="info-content" id="popup-date"></div>
+            </div>
+            <div class="info">
+              <div class="info-title">Time:</div>
+              <div class="info-content" id="popup-time"></div>
+            </div>
+            <div class="info">
+              <div class="info-title">Table for:</div>
+              <div class="info-content" id="popup-number"></div>
+            </div>
+          </div>
+        </div>
+        <button class="popup-close" onclick="closePopup()">OK</button>
+      </div>
+    </div>
+    <!---------FOOTER---------->
+    <section class="footer-container">
+      <div class="footer-content">
+        <div class="footer-item">
+          <div class="footer-title">Address</div>
+          <div class="footer-item-content">
+            Quince Saigon <br />37bis Đ. Ký Con, Phường Nguyễn Thái Bình,
+            <br />Quận 1,Thành phố Hồ Chí Minh
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Follow us</div>
+          <div class="footer-item-content" id="icon-box">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://www.google.com" target="_blank"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://www.pinterest.com" target="_blank"
+              ><i class="fa fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Contact us</div>
+          <div class="footer-item-content">
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>Copyright © 2019. All Rights Reserved Theme design by Zemez</p>
+    </div>
+    <button class="auto-btn" id="auto-btn" onclick="autoScroll()">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </body>
+  <div id="loading">
+    <img id="loading-image" src="./images/ajax-loader.gif" alt="Loading..." />
+  </div>
+  <script src="./assets/JS/booking.js"></script>
+  <script src="./assets/JS/base.js"></script>
+</html>

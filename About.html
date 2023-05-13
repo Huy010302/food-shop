@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/CSS/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css"> 
+    <link -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      href="https://ld-wp.template-help.com/wordpress_prod-22160/v1/wp-content/uploads/2019/02/cropped-favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link rel="stylesheet" href="./assets/CSS/About.css" />
+    <link rel="stylesheet" href="./assets/CSS/rsabout.css" />
+    <title>About</title>
+  </head>
+  <body>
+    <!-- ! NAV BAR -->
+    <section class="header-container">
+      <div class="header-container-flex-desktop">
+        <div class="Logo-desktop">
+          <a href="./index.html"><img src="./images/logo.png" alt="" /></a>
+        </div>
+        <div class="menubar-pc">
+          <a class="item" href="./index.html"><span>Home</span></a>
+          <a class="item" href="./Menu.html"><span>Menu</span></a>
+          <a class="item" href="./Gallery.html"><span>Gallery</span></a>
+          <a class="item" href="./Booking.html"><span>Booking</span></a>
+          <a class="item" href="./About.html"><span>About</span></a>
+          <a class="item" href="./Contact.html"><span>Contact</span></a>
+        </div>
+        <div class="mobile-btn" onclick="showMenu()">
+          <i id="btn-open" class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="nav-overlay" id="nav-overlay" onclick="hideMenu()"></div>
+      </div>
+      <div class="menubar-mobile" id="nav-mobile-btn">
+        <div class="btn-close" onclick="hideMenu()">
+          <i class="fa fa-times"></i>
+        </div>
+        <a class="item" href="./index.html">Home</a>
+        <a class="item" href="./Menu.html">Menu</a>
+        <a class="item" href="./Gallery.html">Gallery</a>
+        <a class="item" href="./Booking.html">Booking</a>
+        <a class="item" href="./About.html">About</a>
+        <a class="item" href="./Contact.html">Contact</a>
+      </div>
+    </section>
+
+    <!-- ! CONTENT -->
+
+    <div id="page" class="site">
+      <div id="content" class="site-content">
+        <div class="elementor elementor-136">
+          <div class="elementor-inner">
+            <div class="elementor-section-wrap">
+              <section class="section-whoweare">
+                <div class="whoweare">
+                  <span> Who We Are </span>
+                </div>
+              </section>
+              <section class="container">
+                <div class="elementor-container">
+                  <div class="content">
+                    <img src="./images/about-1.png" alt="" />
+                  </div>
+                  <div class="content1">
+                    <h2 class="elementor-heading-title">
+                      đôi lời về chúng tôi
+                    </h2>
+                    <p class="elementor-text-editor">
+                      Đến với nhà hàng Âu của chúng tôi, bạn chỉ cần chuẩn bị
+                      tinh thần để đắm chìm trong việc thưởng thức những món ăn
+                      thật sự thơm ngon và hoàn hảo.
+                    </p>
+                    <br />
+                    <br />
+                    <p class="elementor-text-editor">
+                      Đầu bếp nổi tiếng thế giới giới thiệu những cách diễn giải
+                      thú vị về món ăn châu Âu trong một không gian ngoạn mục do
+                      kiến trúc sư Alex Simon xây dựng như một nơi nghỉ ngơi
+                      khỏi sự hỗn loạn không ngừng của Sài Thành.
+                    </p>
+                    <br />
+                    <br />
+                    <h2 class="elementor-heading-title">
+                      Lý do bạn chọn chúng tôi
+                    </h2>
+                    <p class="elementor-text-editor">
+                      Chúng tôi hoan nghênh mọi người đến thăm nhà hàng của
+                      chúng tôi! Mọi người đều có thể tìm thấy chiếc bàn hoàn
+                      hảo của mình và thử những món ăn tuyệt vời từ đầu bếp của
+                      chúng tôi! Chúng tôi làm việc để mọi người mang lại tâm
+                      trạng tuyệt vời, tạo bầu không khí ấm cúng và khiến thời
+                      gian của bạn trở nên tuyệt vời và vui vẻ! Cung cấp dịch vụ
+                      tốt nhất là giá trị cốt lõi của chúng tôi, vì mọi người
+                      đến với chúng tôi để nghỉ ngơi và chúng tôi đang cung cấp
+                      nơi ở hoàn hảo cho họ.
+                    </p>
+                    <div id="img-signature">
+                      <img src="./images/signature.png" alt="" />]
+                    </div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+
+        <!-- ! Animation Number -->
+
+        <div class="fact-container">
+          <div class="fact-heading"><p>Our Fun Facts</p></div>
+          <div class="fact-list">
+            <div class="fact-item">
+              <img src="./images/factitem1.svg" alt="" />
+              <div class="fact-content">
+                <p class="fact-number" id="happyclient-count">5437</p>
+                <p class="fact-title">Happy Clients</p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <img src="./images/factitem2.svg" alt="" />
+              <div class="fact-content">
+                <p class="fact-number" id="amazingdish-count">1230</p>
+                <p class="fact-title">Amazing Dishes</p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <img style="height: 65px" src="./images/factitem3.svg" alt="" />
+              <div class="fact-content">
+                <p class="fact-number" id="satisfiedstaff-count">251</p>
+                <p class="fact-title">Satisfied Staff</p>
+              </div>
+            </div>
+            <div class="fact-item">
+              <img src="./images/factitem4.svg" alt="" />
+              <div class="fact-content">
+                <p class="fact-number" id="workhour-count">9437</p>
+                <p class="fact-title">Work Hours</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Team img -->
+        <div class="team-information">
+          <div class="information-heading">Meet Our Team</div>
+          <div class="information-list">
+            <div class="information-item">
+              <img src="./images/team-1.webp" alt="" />
+              <div class="information-person">
+                <p class="information-name">Dayle Peters</p>
+                <p class="information-position">Head Cheaf</p>
+              </div>
+            </div>
+            <div class="information-item">
+              <img src="./images/team-2.webp" alt="" />
+              <div class="information-person">
+                <p class="information-name">John Franklin</p>
+                <p class="information-position">Head Cheaf</p>
+              </div>
+            </div>
+            <div class="information-item">
+              <img src="./images/team-3.webp" alt="" />
+              <div class="information-person">
+                <p class="information-name">Eva Savits</p>
+                <p class="information-position">Head Cheaf</p>
+              </div>
+            </div>
+            <div class="information-item">
+              <img src="./images/team-4.webp" alt="" />
+              <div class="information-person">
+                <p class="information-name">Michael Freeman</p>
+                <p class="information-position">Head Cheaf</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- !Art 12 years -->
+
+        <div class="art-container-cover">
+          <div class="art-slogan">
+            <h2>
+              We are proud <br />
+              to serving for you
+            </h2>
+          </div>
+          <div class="art-12year">
+            <img src="./images/12years.png" alt="" />
+          </div>
+        </div>
+
+        <section class="feedback-container">
+          <div class="feedbacks">
+            <h2 class="h2">
+              <span class="whatppsay"> What People Say About Us </span>
+            </h2>
+
+            <!-- slideshow2 -->
+            <div class="slideshow2">
+              <!-- per1 -->
+              <div class="sl_show per">
+                <img src="images/PPsayaboutus1.png" alt="" />
+                <p>
+                  Tinh thần, thái độ của anh chị em nhân viên nhà hàng hết sức
+                  nhiệt tình, rất tốt và chu đáo, ba anh đồng sáng lập cũng hết
+                  sức tận tình với khách hàng. Thức ăn đảm bảo an toàn thực
+                  phẩm, các món ăn ngon và đầy đặn, hình thức trang trí cũng rất
+                  đẹp.
+                </p>
+                <span class="Name">Mary Scott</span>
+                <span class="Post">Founder</span>
+              </div>
+              <!-- per2 -->
+              <div class="sl_show per">
+                <img src="./images/PPsayaboutus2.png" alt="" />
+                <p>
+                  Tôi yêu ẩm thực, không khí và dịch vụ của bạn! Một sự kết hợp
+                  của tất cả các yếu tố này là hoàn hảo ở đây. Tôi đã đến thăm
+                  nhà hàng với bạn bè và tôi đã rất ngạc nhiên bởi nội thất và
+                  thực đơn phong phú của nó! Cảm ơn vì công việc tuyệt vời của
+                  bạn!
+                </p>
+                <span class="Name">Debby Girr</span>
+                <span class="Post">Founder</span>
+              </div>
+              <!-- per3 -->
+              <div class="sl_show per">
+                <img src="./images/PPsayaboutus3.png" alt="" />
+                <p>
+                  Bầu không khí hoàn toàn tuyệt đẹp và nhân viên thân thiện! Tôi
+                  ngạc nhiên với vị trí thực đơn và hương vị bữa ăn của bạn! Cảm
+                  ơn bạn vì thái độ chuyên nghiệp đối với công việc và sự chú ý
+                  của bạn đến từng chi tiết! Nhà hàng hoàn hảo! Tôi và gia đình
+                  tôi chắc chắn sẽ đến thăm bạn một lần nữa.
+                </p>
+                <span class="Name">Thomas Taker</span>
+                <span class="Post">Founder</span>
+              </div>
+              <div class="khungdot">
+                <span class="dot" onclick="Change(1)"></span>
+                <span class="dot" onclick="Change(2)"></span>
+                <span class="dot" onclick="Change(3)"></span>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- ! FOOTER -->
+    <section class="footer-container">
+      <div class="footer-content">
+        <div class="footer-item">
+          <div class="footer-title">Address</div>
+          <div class="footer-item-content">
+            Quince Saigon <br />37bis Đ. Ký Con, Phường Nguyễn Thái Bình,
+            <br />Quận 1,Thành phố Hồ Chí Minh
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Follow us</div>
+          <div class="footer-item-content" id="icon-box">
+            <a href="https://www.facebook.com" target="_blank"
+              ><i class="fa fa-facebook"></i
+            ></a>
+            <a href="https://www.twitter.com" target="_blank"
+              ><i class="fa fa-twitter"></i
+            ></a>
+            <a href="https://www.google.com" target="_blank"
+              ><i class="fa fa-google-plus"></i
+            ></a>
+            <a href="https://www.linkedin.com" target="_blank"
+              ><i class="fa fa-linkedin"></i
+            ></a>
+            <a href="https://www.pinterest.com" target="_blank"
+              ><i class="fa fa-pinterest"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-item">
+          <div class="footer-title">Contact us</div>
+          <div class="footer-item-content">
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="callto:+1 800 603 6035">+1 800 603 6035</a><br />
+            <a href="mailto:mail@demolink.org">mail@demolink.org</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="copyright">
+      <p>Copyright © 2019. All Rights Reserved Theme design by Zemez</p>
+    </div>
+    <button class="auto-btn" id="auto-btn" onclick="autoScroll()">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </button>
+  </body>
+  <div id="loading">
+    <img id="loading-image" src="./images/ajax-loader.gif" alt="Loading..." />
+  </div>
+  <script src="./assets/JS/about.js"></script>
+  <!-- <script src="./assets/JS/base.js"></script> -->
+</html>
